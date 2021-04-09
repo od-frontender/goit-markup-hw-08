@@ -1,0 +1,27 @@
+.burger-btn-open,
+.burger-btn-close {
+    display: block;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+.burger-btn-open__icon,
+.burger-btn-close {
+    fill: currentColor;
+
+    &:hover, 
+    &:focus {
+        fill: $color-accent;
+        cursor: pointer;
+    }
+}
+.burger-btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    fill: currentColor;
+    width: 40px;
+    height: 40px;
+}
