@@ -1,9 +1,8 @@
 .social-list {
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 206px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 .footer__social-list {
     padding-right: 0;
@@ -33,9 +32,7 @@
         fill: #fff;
     }
 }
-.social-list__link--dark {
-    background-color: rgba(255, 255, 255, 0.1);
-}
+
 
 .social-list__icon {
     margin: auto;
@@ -43,5 +40,10 @@
     height: 20px;
     fill: #AFB1B8;
     transition: fill 250ms $timing-function;
-
+}
+.social-list__link--dark {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list__icon--dark {
+    fill: #fff;
 }

@@ -21,6 +21,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .link {
@@ -220,24 +221,39 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
-.address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -250,17 +266,23 @@ img {
 }
 
 .address__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__list {
+    margin-bottom: 0;
+  }
 }
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+@media screen and (max-width: 1199px) {
+  .address__item {
+    text-align: center;
+  }
 }
 
 .address__link {
@@ -280,12 +302,9 @@ img {
   color: #FFFFFF;
 }
 
-.social {
-  margin-right: 93px;
-}
-
-.social .social__join {
+.social__join {
   display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -293,10 +312,27 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social__join {
+    text-align: left;
+  }
+}
+
+.footer__social-list {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    margin-bottom: 0;
+  }
 }
 
 .mail-form__action {
   display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -306,13 +342,25 @@ img {
   margin-bottom: 20px;
 }
 
-.mail-form__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .mail-form__action {
+    text-align: left;
+  }
 }
 
-.mail-form__wrapper .mail-form__input {
+.mail-form__wrapper {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-form__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mail-form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -320,8 +368,22 @@ img {
   margin-right: 12px;
   background-color: #2F303A;
   padding: 15px 16px;
-  min-width: 358px;
+  width: 100%;
   color: #fff;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-form__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mail-form__input {
+    width: 450px;
+  }
 }
 
 .mail-form__icon {
@@ -355,8 +417,8 @@ img {
 }
 
 .social-list {
-  padding-left: 32px;
-  padding-right: 32px;
+  width: 206px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,10 +460,6 @@ img {
   fill: #fff;
 }
 
-.social-list__link--dark {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .social-list__icon {
   margin: auto;
   width: 20px;
@@ -409,6 +467,14 @@ img {
   fill: #AFB1B8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list__link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list__icon--dark {
+  fill: #fff;
 }
 
 .service__button {

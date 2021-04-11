@@ -58,7 +58,12 @@
     align-items: center;
     flex-direction: row;
     margin-bottom: 20px;
-    padding-left: 13px;
+}
+@media screen and (min-width: 1200px) {
+    .modal-form__policy {
+        padding-left: 13px;
+    }
+    
 }
 .policy {
     display: inline-flex;
@@ -100,12 +105,18 @@
     height: 15px;
 }
 .policy__text {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     .policy__link {
         color: $color-accent;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .policy__text {
+        font-size: 14px;
+        line-height: 1.7; 
     }
 }
 
