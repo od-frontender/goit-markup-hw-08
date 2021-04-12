@@ -124,6 +124,11 @@
     color: #fff;
     margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+    .mail-form__input {
+        width: 450px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .mail-form__input {
         width: 358px;
@@ -131,11 +136,7 @@
     }
 
 }
-@media screen and (min-width: 768px) {
-    .mail-form__input {
-        width: 450px;
-    }
-}
+
 .mail-form__icon {
     width: 24px;
     height: 24px;

@@ -1,11 +1,13 @@
 @import "./utils/variables";
-
 @import "./base/reset-style";
+
+@import "./components/container";
+@import "./components/social";
+@import "./components/logo";
+@import "./components/service-button";
+
 
 @import "./layout/header-section";
 @import "./layout/portfolio-section";
 @import "./layout/footer-section";
 
-@import "./components/container";
-@import "./components/social";
-@import "./components/service-button";

@@ -1,5 +1,4 @@
 .mobile-menu {
-
     position: fixed;
     top: 0;
     left: 50%;
@@ -20,7 +19,7 @@
         visibility: visible;
         pointer-events: auto;
     }
-    .mobile-navigation-list {
+    .mobile-navigation {
         margin-bottom: 25vh;
     }
     .mobile-navigation__item:not(:last-child) {
