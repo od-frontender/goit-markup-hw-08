@@ -8,7 +8,7 @@
     background-color: transparent;
 }
 .burger-btn-open__icon,
-.burger-btn-close {
+.burger-btn-close__icon {
     fill: currentColor;
 
     &:hover, 
@@ -21,7 +21,6 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    fill: currentColor;
     width: 40px;
     height: 40px;
 }
